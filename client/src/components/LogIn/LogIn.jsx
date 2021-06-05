@@ -2,6 +2,7 @@ import { useState } from "react";
 import { loginUser } from "../../services/auth";
 import { useHistory } from "react-router-dom";
 import { TextField } from "@material-ui/core";
+import { image2 } from "../../assets/images";
 
 const LogIn = (props) => {
 	const [input, setInput] = useState({});
@@ -37,12 +38,7 @@ const LogIn = (props) => {
 					<div className="container-fluid">
 						<div className="row">
 							<div className="imgContainer col-12 col-md-6 order-2 order-md-1 ps-0 pe-0 pe-md-3">
-								<img
-									width="100%"
-									height="100%"
-									src="https://image.freepik.com/free-vector/e-learning-online-education-concept-illustration-kids-studying-home-via-internet-young-people-cartoon-flat-design-style-vector-illustration_1207-988.jpg"
-									alt=""
-								/>
+								<img width="100%" height="100%" src={image2} alt="" />
 							</div>
 							<div className="col-12 col-md-6 order-1 order-md-2 py-4 align-self-center">
 								<h2 className="fw-bold">

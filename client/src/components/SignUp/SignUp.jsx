@@ -3,6 +3,7 @@ import { registerUser } from "../../services/auth.js";
 import { useHistory } from "react-router-dom";
 import TextField from "@material-ui/core/TextField";
 import "./SignUp.css";
+import { image1 } from "../../assets/images";
 
 function SignUp() {
 	const [input, setInput] = useState({ is_student: true });
@@ -37,12 +38,7 @@ function SignUp() {
 				<div className="container-fluid">
 					<div className="row">
 						<div className="imgContainer col-12 col-md-6 order-2 order-md-1 ps-0 pe-0 pe-md-3">
-							<img
-								width="100%"
-								height="100%"
-								src="https://image.freepik.com/free-vector/e-learning-online-education-concept-illustration_1207-1031.jpg"
-								alt=""
-							/>
+							<img width="100%" height="100%" src={image1} alt="" />
 						</div>
 						<div className="col-12 col-md-6 order-1 order-md-2 py-4">
 							<h2 className="fw-bold">
